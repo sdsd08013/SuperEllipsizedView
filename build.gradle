@@ -8,13 +8,13 @@ plugins {
 
 publishing {
     publications {
-        register<MavenPublication>("release") {
+        release(MavenPublication) {
             groupId = "sdsd08013"
             artifactId = "SuperEllipsizedView"
             version = "0.0.1"
 
             afterEvaluate {
-                from(components["release"])
+                from components.release
             }
         }
     }
