@@ -1,4 +1,4 @@
-package lib.sky.superellipsizedview
+package lib.sky.superellipsizedview.views
 
 import com.google.android.material.shape.CornerTreatment
 import com.google.android.material.shape.ShapePath

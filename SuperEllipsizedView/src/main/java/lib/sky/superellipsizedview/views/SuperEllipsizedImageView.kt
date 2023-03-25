@@ -1,4 +1,4 @@
-package lib.sky.superellipsizedview
+package lib.sky.superellipsizedview.views
 
 import android.content.Context
 import android.util.AttributeSet

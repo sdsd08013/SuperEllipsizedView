@@ -1,10 +1,11 @@
-package lib.sky.superellipsizedview
+package lib.sky.superellipsizedview.views
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.View
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.shape.*
+import lib.sky.superellipsizedview.R
 import kotlin.math.pow
 
 class SuperEllipsizedMaterialButton : MaterialButton {
