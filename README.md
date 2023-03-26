@@ -10,7 +10,7 @@ width and height should be same and radius should be half of those.
 allprojects {
     repositories {
         maven { url 'https://jitpack.io' }
-	}
+    }
 }
 ```
 
