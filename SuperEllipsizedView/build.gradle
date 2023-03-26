@@ -21,9 +21,26 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+        singleVariant("debug") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+        multipleVariants {
+            withSourcesJar()
+            withJavadocJar()
+            allVariants()
+        }
     }
 }
 
@@ -40,6 +57,14 @@ afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
+                from components.release
+
+                groupId = "sdsd08013"
+                artifactId = "SuperEllipsizedView"
+                version = "0.0.1"
+            }
+
+            debug(MavenPublication) {
                 from components.debug
 
                 groupId = "sdsd08013"
