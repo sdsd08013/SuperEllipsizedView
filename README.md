@@ -1,7 +1,27 @@
+[![](https://jitpack.io/v/sdsd08013/SuperEllipsizedView.svg)](https://jitpack.io/#sdsd08013/SuperEllipsizedView)
+
+
 # SuperEllipsizedView
 superellipsizedview supports only MaterialButton and ShapableImageView.
 width and height should be same and radius should be half of those.
-## MaterialButton
+
+## Getting Started
+```groovy
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+	}
+}
+```
+
+```groovy
+dependencies {
+    implementation 'com.github.sdsd08013:SuperEllipsizedView:Tag'
+}
+```
+## How to use
+### MaterialButton
+
 ```xml
 <SuperEllipsizedMaterialButton
     android:id=“@+id/icon”
@@ -17,7 +37,7 @@ width and height should be same and radius should be half of those.
     app:iconTint=“@null”
     app:radius=“22dp” />
 ```
-## ImageView
+### ImageView
 ```xml
 <SuperEllipsizedImage
     android:id=“@+id/user_icon”
